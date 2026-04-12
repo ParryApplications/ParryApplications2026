@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Portfolio - ParryApplications | Mobile & Web Applications</title>
+    <meta name="description" content="Explore the portfolio of Paras Bhatt - Android apps, web applications, and enterprise projects built with Java, Spring Boot, React, and modern technologies.">
+    <meta name="keywords" content="Portfolio, Android Apps, Web Applications, Java Projects, Spring Boot, React, Mobile Development">
+    <meta name="author" content="Paras Bhatt">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        
+        .project-detail {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 3rem;
+        }
+        
+        .project-detail img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 2rem;
+        }
+        
+        .project-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+        }
+        
+        .meta-item i {
+            color: var(--primary-color);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Developerlogo.png" alt="ParryApplications Logo">
+                <span>ParryApplications</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="services.html#become-tutor" class="btn btn-primary" id="becomeTutorBtn">Become a Tutor</a></li>
+            </ul>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container center">
+            <h1 data-aos="fade-up">My Portfolio</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                A showcase of mobile applications, web projects, and enterprise solutions
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Projects Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Professional Projects</h2>
+                <p>Enterprise and freelance work experience</p>
+            </div>
+            
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/code.jpeg" alt="Apple Privacy Management">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>Apple Privacy Management Application</h3>
+                            <p class="lead">Enterprise-grade privacy data processing system for Apple</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Client: Apple via Wipro</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>2021 - Present</span>
+                                </div>
+                            </div>
+                            
+                            <p>Engineered resilient backend services using Spring Boot and AWS DynamoDB, contributing to microservices and event-driven architecture for high-volume privacy data processing.</p>
+                            
+                            <h5>Key Achievements:</h5>
+                            <ul class="feature-list">
+                                <li>Handles 50K+ daily requests with high availability</li>
+                                <li>Improved system throughput by 30-45%</li>
+                                <li>Achieved 99.9% uptime with fault-tolerant processing</li>
+                                <li>Implemented microservices architecture for scalability</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">AWS DynamoDB</span>
+                                <span class="tag">Microservices</span>
+                                <span class="tag">AWS Lambda</span>
+                                <span class="tag">AWS S3</span>
+                                <span class="tag">CloudWatch</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/shriharsha-healthcare.jpg" alt="ShriHarsha Healthcare">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>ShriHarsha Healthcare - Healthcare Platform</h3>
+                            <p class="lead">Complete website creation for healthcare services provider</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Freelance Project</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Live Website</span>
+                                </div>
+                            </div>
+                            
+                            <p>Redesigned and developed a professional healthcare website for ShriHarsha Healthcare Private Limited, transforming it from a basic site into a modern, fully-functional platform.</p>
+                            
+                            <h5>Key Achievements:</h5>
+                            <ul class="feature-list">
+                                <li>Complete website redesign with modern UI/UX</li>
+                                <li>Implemented responsive design for all devices</li>
+                                <li>Created comprehensive design system with custom CSS</li>
+                                <li>SEO optimization and accessibility compliance (WCAG AA)</li>
+                                <li>Integrated team profiles (10+ dietitians, doctors, lab experts)</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Bootstrap 5</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SMTP.js</span>
+                                <span class="tag">Responsive Design</span>
+                                <span class="tag">SEO</span>
+                                <span class="tag">Github Actions</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://shriharshahealthcare.com" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Visit Live Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/app.jpeg" alt="EventsHub">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>EventsHub - Full-Stack Event Management Platform</h3>
+                            <p class="lead">Centralized event discovery and organization platform</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Full Stack Development</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>Open Source</span>
+                                </div>
+                            </div>
+                            
+                            <p>Developed a full-stack event management application using Spring Boot and React.js to facilitate centralized event discovery and organization.</p>
+                            
+                            <h5>Features:</h5>
+                            <ul class="feature-list">
+                                <li>Secure backend with Spring Security for authentication</li>
+                                <li>MySQL database for optimized data persistence</li>
+                                <li>Automated notification system using GitHub Actions</li>
+                                <li>Email API alerts for upcoming events</li>
+                                <li>Modern React.js frontend</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Spring Security</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">GitHub Actions</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/ParryApplications/Events-Hub.git" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> Backend Repository
+                                </a>
+                                <a href="https://github.com/ParryApplications/Events-hub_Frontend.git" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> Frontend Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Applications Section -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Mobile Applications</h2>
+                <p>Published Android apps on Google Play Store</p>
+            </div>
+            
+            <!-- Earthquake Watcher -->
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/App-feature-graphic.png" alt="Earthquake Watcher">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>Earthquake Watcher</h3>
+                            <p class="lead">Real-Time Global Seismic Activity Tracker</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fab fa-android"></i>
+                                    <span>Android Application</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-download"></i>
+                                    <span>Published on Play Store</span>
+                                </div>
+                            </div>
+                            
+                            <p>Developed a real-time Android application using Java, XML, and REST APIs to track global seismic activity. Engineered a synchronization engine that updates data every 72 seconds.</p>
+                            
+                            <h5>Key Features:</h5>
+                            <ul class="feature-list">
+                                <li>Updates every 1.2 minutes automatically</li>
+                                <li>Marks latest 101 earthquake locations worldwide</li>
+                                <li>Color-coded markers based on magnitude</li>
+                                <li>Detailed list view with complete information</li>
+                                <li>Auto-navigation to latest earthquake location</li>
+                                <li>Search functionality by state/country</li>
+                                <li>Interactive map visualization</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">Google Maps</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.paras.paras.earthquakewatcher" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-google-play"></i> View on Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mini Store -->
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/ministore.png" alt="Mini Store">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>Mini Store - All-in-One Mobile Commerce</h3>
+                            <p class="lead">Integrated Mobile Commerce Platform</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fab fa-android"></i>
+                                    <span>Android Application</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Under 6MB</span>
+                                </div>
+                            </div>
+                            
+                            <p>Built a lightweight Android application under 6MB using Java and XML, integrating multiple third-party web services into a unified platform.</p>
+                            
+                            <h5>Features:</h5>
+                            <ul class="feature-list">
+                                <li>All-in-one platform for shopping, social media, music, news, and more</li>
+                                <li>Real-time notifications for coupons, offers, and deals</li>
+                                <li>Convenient app size (less than 6MB)</li>
+                                <li>Integrated search functionality</li>
+                                <li>Multiple categories: Shopping, Food, Travel, Entertainment</li>
+                                <li>Fast and reliable performance</li>
+                            </ul>
+                            
+                            <h5>Categories:</h5>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li>Online Shopping</li>
+                                        <li>Movie Bookings</li>
+                                        <li>Hotel & Flight Bookings</li>
+                                        <li>Food Ordering</li>
+                                        <li>Tour and Travels</li>
+                                        <li>Social Media</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="feature-list">
+                                        <li>Music and Podcast</li>
+                                        <li>Health Care</li>
+                                        <li>News and Content</li>
+                                        <li>Live Shows</li>
+                                        <li>Books</li>
+                                        <li>Property Dealers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">WebView</span>
+                                <span class="tag">Notifications</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.parryapplications.allinonestore" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-google-play"></i> View on Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ChitChat -->
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/ChitChat-feature-graphic.png" alt="ChitChat">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>ChitChat - Secure Messaging Platform</h3>
+                            <p class="lead">Global Friend-Making Chat Application</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fab fa-android"></i>
+                                    <span>Android Application</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Secure & Private</span>
+                                </div>
+                            </div>
+                            
+                            <p>ChitChat Anytime Anywhere is an Indian App for people who want to make global friends with great privacy. User-friendly, faster than other apps, with no crashing reports.</p>
+                            
+                            <h5>Features:</h5>
+                            <ul class="feature-list">
+                                <li>No contact number required for registration</li>
+                                <li>Talk to anyone worldwide</li>
+                                <li>Easy to understand interface</li>
+                                <li>World's fast application for chatting</li>
+                                <li>View status of other users</li>
+                                <li>Search users by email</li>
+                                <li>Authenticated users only (no fake profiles)</li>
+                                <li>Regular updates for users</li>
+                                <li>Only verified users can log in</li>
+                            </ul>
+                            
+                            <h5>Upcoming Updates:</h5>
+                            <ul class="feature-list">
+                                <li>Notification feature</li>
+                                <li>Send images, documents, and videos</li>
+                                <li>Enhanced performance</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Real-time Database</span>
+                                <span class="tag">Authentication</span>
+                                <span class="tag">Android Studio</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/ParryApplications/ChitChat.git" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ShayaranaSthan -->
+            <div class="project-detail" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="images/ShayaranaSthan-feature-graphic.png" alt="ShayaranaSthan">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="project-info">
+                            <h3>ShayaranaSthan - Poetry Platform</h3>
+                            <p class="lead">Platform for Poetry Enthusiasts</p>
+                            
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="fab fa-android"></i>
+                                    <span>Android Application</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-pen-fancy"></i>
+                                    <span>Content Creation</span>
+                                </div>
+                            </div>
+                            
+                            <p>ShayaranaSthan is a Poetry Platform which gives the opportunity to users to show their talent by writing Shayari (poetry).</p>
+                            
+                            <h5>Features:</h5>
+                            <ul class="feature-list">
+                                <li>Indian App with great UI</li>
+                                <li>Smart functionalities for easy use</li>
+                                <li>Fully secure platform</li>
+                                <li>Opportunity for users to showcase talent</li>
+                                <li>Write your own Shayari within the app</li>
+                                <li>Direct upload feature</li>
+                                <li>Safe content for all age groups</li>
+                                <li>Easy to understand interface</li>
+                                <li>Get latest Shayari every day</li>
+                                <li>Notification feature</li>
+                            </ul>
+                            
+                            <div class="portfolio-tags mt-3">
+                                <span class="tag">Java</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">Content Management</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/ParryApplications/ShayaranaSthan.git" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <div data-aos="fade-up">
+                <h2>Ready to Build Your Next Project?</h2>
+                <p class="lead mb-4">Let's turn your ideas into reality with cutting-edge technology</p>
+                <a href="services.html#app-development" class="btn btn-primary btn-lg me-2">Start Your Project</a>
+                <a href="index.html#contact" class="btn btn-secondary btn-lg">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ParryApplications</h3>
+                <p>Building innovative solutions for startups and businesses. Your trusted partner in digital transformation.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/parryapplications-paras-bhatt" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ParryApplications" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=5559217941266301970" target="_blank" class="social-link">
+                        <i class="fab fa-google-play"></i>
+                    </a>
+                    <a href="mailto:parryapplications@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About Me</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="services.html#app-development">App Development</a>
+                <a href="services.html#tutoring">Tutoring</a>
+                <a href="services.html#become-tutor">Become a Tutor</a>
+                <a href="index.html#contact">Counselling</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> parryapplications@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9870154269</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 ParryApplications. All Rights Reserved. | Developed by Paras Bhatt</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+</body>
+</html>

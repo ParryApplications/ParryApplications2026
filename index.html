@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ParryApplications - Java Full Stack Developer | App Development & Tutoring Services</title>
+    <meta name="description" content="Paras Bhatt - Java Full Stack Developer with 5+ years of experience. Offering professional app development services and tutoring for startups and businesses.">
+    <meta name="keywords" content="Java Developer, Full Stack Developer, App Development, Web Development, Tutoring, Microservices, AWS, Spring Boot, Paras Bhatt">
+    <meta name="author" content="Paras Bhatt">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Developerlogo.png" alt="ParryApplications Logo">
+                <span>ParryApplications</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="services.html#become-tutor" class="btn btn-primary" id="becomeTutorBtn">Become a Tutor</a></li>
+            </ul>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Welcome to ParryApplications</h1>
+            <p class="hero-subtitle">Java Full Stack Developer | App Development Expert</p>
+            <p class="hero-description">
+                Building scalable, high-performance applications and helping startups & businesses 
+                achieve their digital goals. Specialized in Java, Spring Boot, Microservices, Design Patterns, and AWS.
+            </p>
+            <div class="hero-buttons">
+                <a href="services.html#app-development" class="btn btn-primary">Develop Your App</a>
+                <a href="services.html#tutoring" class="btn btn-outline">Book a Tutor</a>
+                <a href="#contact" class="btn btn-secondary">Get Counselling</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What We Offer</h2>
+                <p>Professional services to help you succeed</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development</h3>
+                    <p>Custom mobile and web applications built with cutting-edge technologies. From concept to deployment, we handle it all.</p>
+                    <a href="services.html#app-development" class="btn btn-primary mt-3">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Tutoring Services</h3>
+                    <p>Expert tutoring in programming, data structures, algorithms, and software development. Both academic and coding subjects.</p>
+                    <a href="services.html#tutoring" class="btn btn-primary mt-3">Book a Tutor</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Technical Counselling</h3>
+                    <p>Get expert guidance on technology choices, architecture decisions, and career development in software engineering.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Get Counselling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Portfolio Section -->
+    <section id="featured-work" class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/App-feature-graphic.png" alt="Earthquake Watcher" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>Earthquake Watcher</h3>
+                        <p>Real-time Android application tracking global seismic activity with interactive maps and custom filters.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.paras.paras.earthquakewatcher" target="_blank" class="btn btn-primary mt-3">View on Play Store</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/ministore.png" alt="Mini Store" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>Mini Store</h3>
+                        <p>Lightweight all-in-one mobile commerce app under 6MB with integrated services and real-time notifications.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.parryapplications.allinonestore" target="_blank" class="btn btn-primary mt-3">View on Play Store</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/ChitChat-feature-graphic.png" alt="ChitChat" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3>ChitChat</h3>
+                        <p>Secure chatting application for making global friends with great privacy and user-friendly interface.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Real-time DB</span>
+                        </div>
+                        <a href="https://github.com/ParryApplications/ChitChat.git" target="_blank" class="btn btn-primary mt-3"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Why Choose ParryApplications?</h2>
+                <p>Your success is our priority</p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>5+ Years Experience</h3>
+                        <p>Proven track record working with enterprise clients like Apple, building scalable distributed systems.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Modern Tech Stack</h3>
+                        <p>Expertise in Java, Spring Boot, Microservices, AWS, React, and cutting-edge technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Startup Friendly</h3>
+                        <p>Specialized in helping startups and early-stage businesses build their digital presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your project or learning needs</p>
+            </div>
+            
+            <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
+                <div id="contactAlert" class="alert"></div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="10-digit phone number" pattern="[0-9]{10}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ParryApplications</h3>
+                <p>Building innovative solutions for startups and businesses. Your trusted partner in digital transformation.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/parryapplications-paras-bhatt" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ParryApplications" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=5559217941266301970" target="_blank" class="social-link">
+                        <i class="fab fa-google-play"></i>
+                    </a>
+                    <a href="mailto:parryapplications@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About Me</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="services.html#app-development">App Development</a>
+                <a href="services.html#tutoring">Tutoring</a>
+                <a href="services.html#become-tutor">Become a Tutor</a>
+                <a href="#contact">Counselling</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> parryapplications@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9870154269</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 ParryApplications. All Rights Reserved. | Developed by Paras Bhatt</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+</body>
+</html>

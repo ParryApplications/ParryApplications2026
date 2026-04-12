@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>About Me - Paras Bhatt | Java Full Stack Developer</title>
+    <meta name="description" content="Learn about Paras Bhatt - Java Full Stack Developer with 5+ years of experience, M.Tech from BITS Pilani, AWS Certified Cloud Practitioner.">
+    <meta name="keywords" content="Paras Bhatt, Java Developer, Full Stack Developer, BITS Pilani, AWS Certified">
+    <meta name="author" content="Paras Bhatt">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+        
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            background: var(--light-bg);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .experience-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-card .company {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-card .duration {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .certification-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .certification-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .stats-section {
+            background: var(--dark-bg);
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Developerlogo.png" alt="ParryApplications Logo">
+                <span>ParryApplications</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link active">About Me</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="services.html#become-tutor" class="btn btn-primary" id="becomeTutorBtn">Become a Tutor</a></li>
+            </ul>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Paras Bhatt" class="profile-image" data-aos="zoom-in">
+            <h1 data-aos="fade-up">Paras Bhatt</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                Java Full Stack Developer | Senior Project Engineer<br>
+                M.Tech (BITS Pilani) | AWS Certified Cloud Practitioner
+            </p>
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:parryapplications@gmail.com" class="btn btn-outline me-2">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/parryapplications-paras-bhatt" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6" data-aos="fade-up">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Daily Requests Handled</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">System Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Professional Summary</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <p class="lead">
+                        Java Full Stack Developer with 5+ years of experience building scalable, high-performance 
+                        distributed systems, contributing to enterprise-grade applications for Apple. 
+                        Specialized in backend engineering using Java and Spring Boot, with hands-on experience 
+                        in microservices architecture, event-driven systems, and cloud-native development on AWS.
+                    </p>
+                    <p>
+                        AWS Certified Cloud Practitioner with proven experience in designing resilient and 
+                        fault-tolerant systems. Strong foundation in Data Structures, Algorithms, and System Design, 
+                        with a track record of improving performance, scalability, and reliability of production systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-up">
+                    <h4><i class="fas fa-code"></i> Programming & Frameworks</h4>
+                    <div class="mt-3">
+                        <span class="skill-badge">Java 8+</span>
+                        <span class="skill-badge">Spring Boot</span>
+                        <span class="skill-badge">Spring MVC</span>
+                        <span class="skill-badge">Spring Cloud</span>
+                        <span class="skill-badge">Hibernate</span>
+                        <span class="skill-badge">JPA</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">React.js</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-database"></i> Databases & Data</h4>
+                    <div class="mt-3">
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">AWS DynamoDB</span>
+                        <span class="skill-badge">Redis</span>
+                        <span class="skill-badge">Apache Kafka</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">NoSQL</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                    <div class="mt-3">
+                        <span class="skill-badge">AWS EC2</span>
+                        <span class="skill-badge">AWS S3</span>
+                        <span class="skill-badge">AWS Lambda</span>
+                        <span class="skill-badge">CloudWatch</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">CI/CD</span>
+                        <span class="skill-badge">Git</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fas fa-project-diagram"></i> Architecture & Design</h4>
+                    <div class="mt-3">
+                        <span class="skill-badge">Microservices</span>
+                        <span class="skill-badge">REST APIs</span>
+                        <span class="skill-badge">System Design</span>
+                        <span class="skill-badge">Design Patterns</span>
+                        <span class="skill-badge">SOLID Principles</span>
+                        <span class="skill-badge">Event-Driven Architecture</span>
+                        <span class="skill-badge">Distributed Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Work Experience</h2>
+            </div>
+            
+            <div class="experience-card" data-aos="fade-up">
+                <h4>Senior Project Engineer</h4>
+                <div class="company"><i class="fas fa-building"></i> Wipro, Karnataka, India</div>
+                <div class="duration"><i class="fas fa-calendar"></i> June 2021 – Present</div>
+                <ul>
+                    <li>Engineered and maintained distributed RESTful APIs using Java, Spring Boot, and AWS DynamoDB, handling 50K+ daily requests while ensuring high availability</li>
+                    <li>Elevated application performance and system throughput by 30–45% through query optimization and efficient service-to-service communication</li>
+                    <li>Designed and implemented microservices architecture, enabling independent deployment, scalability, and fault isolation</li>
+                    <li>Developed an event-driven system using AWS Lambda for activity tracking, ensuring fault-tolerant processing and achieving 99.9% uptime</li>
+                    <li>Identified and resolved performance bottlenecks, significantly improving system efficiency and stability</li>
+                    <li>Applied SOLID principles and design patterns, improving code maintainability, scalability, and reusability across services</li>
+                </ul>
+            </div>
+            
+            <div class="experience-card" data-aos="fade-up">
+                <h4>Android Developer – Internship</h4>
+                <div class="company"><i class="fas fa-building"></i> Edhusk, Delhi, India</div>
+                <div class="duration"><i class="fas fa-calendar"></i> January 2021 - April 2021</div>
+                <ul>
+                    <li>Implemented and optimized Android applications with Java, XML, and Firebase</li>
+                    <li>Improved app performance by 40% through optimization techniques</li>
+                    <li>Enhanced user experience through UI improvements and real-time data handling</li>
+                </ul>
+            </div>
+            
+            <div class="experience-card" data-aos="fade-up">
+                <h4>Android Developer – Internship</h4>
+                <div class="company"><i class="fas fa-building"></i> Triceria Solutions, Delhi, India</div>
+                <div class="duration"><i class="fas fa-calendar"></i> April 2020 - June 2020</div>
+                <ul>
+                    <li>Built an end-to-end Android application from scratch leveraging Java, XML, and Firebase</li>
+                    <li>Collaborated with cross-functional teams to deliver features aligned with business requirements</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Education</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-up">
+                    <div class="experience-card">
+                        <h4>M.Tech in Software Systems</h4>
+                        <div class="company"><i class="fas fa-university"></i> Birla Institute of Technology and Science, Pilani (BITS Pilani)</div>
+                        <div class="duration"><i class="fas fa-calendar"></i> April 2022 - November 2025</div>
+                        <p><strong>CGPA:</strong> 7.69/10</p>
+                        <p>Bengaluru, Karnataka, India</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-card">
+                        <h4>BCA in Information Technology</h4>
+                        <div class="company"><i class="fas fa-university"></i> Guru Gobind Singh Indraprastha University</div>
+                        <div class="duration"><i class="fas fa-calendar"></i> June 2018 - June 2021</div>
+                        <p><strong>CGPA:</strong> 8.51/10</p>
+                        <p>Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Certifications & Achievements</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fab fa-aws"></i></div>
+                        <h5>AWS Certified Cloud Practitioner</h5>
+                        <p>Amazon Web Services</p>
+                        <small>Credential ID: ZB190PN1T2441RKP</small>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fas fa-certificate"></i></div>
+                        <h5>Microservices Developer - Level 2</h5>
+                        <p>Wipro</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fas fa-leaf"></i></div>
+                        <h5>Spring Boot - Level 2</h5>
+                        <p>Wipro</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fas fa-code"></i></div>
+                        <h5>Java Design Patterns & SOLID</h5>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fab fa-react"></i></div>
+                        <h5>React Developer - Level 2</h5>
+                        <p>Wipro & Udemy</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="certification-card">
+                        <div class="certification-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h5>Data Structures & Algorithms</h5>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Awards & Recognition</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-trophy"></i></div>
+                        <h5>Outstanding Performance</h5>
+                        <p>Received formal recognition at Wipro for outstanding performance and contributions to high-impact enterprise projects</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-star"></i></div>
+                        <h5>Reliability & Ownership</h5>
+                        <p>Recognized for strong ownership, reliability, and consistent delivery through effective communication</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <h5>Team Leadership</h5>
+                        <p>Appreciated for fostering a collaborative and inclusive team environment by demonstrating leadership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <div data-aos="fade-up">
+                <h2>Let's Work Together</h2>
+                <p class="lead mb-4">Interested in collaborating or need expert guidance?</p>
+                <a href="index.html#contact" class="btn btn-primary btn-lg me-2">Get In Touch</a>
+                <a href="portfolio.html" class="btn btn-secondary btn-lg">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ParryApplications</h3>
+                <p>Building innovative solutions for startups and businesses. Your trusted partner in digital transformation.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/parryapplications-paras-bhatt" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ParryApplications" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://play.google.com/store/apps/dev?id=5559217941266301970" target="_blank" class="social-link">
+                        <i class="fab fa-google-play"></i>
+                    </a>
+                    <a href="mailto:parryapplications@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About Me</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="services.html#app-development">App Development</a>
+                <a href="services.html#tutoring">Tutoring</a>
+                <a href="services.html#become-tutor">Become a Tutor</a>
+                <a href="index.html#contact">Counselling</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> parryapplications@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9870154269</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 ParryApplications. All Rights Reserved. | Developed by Paras Bhatt</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+</body>
+</html>
