@@ -272,7 +272,6 @@ firebase deploy
 ## 📞 Contact Information
 
 - **Email**: parryapplications@gmail.com
-- **Phone**: +91 9870154269
 - **LinkedIn**: [Paras Bhatt](https://www.linkedin.com/in/parryapplications-paras-bhatt)
 - **GitHub**: [ParryApplications](https://github.com/ParryApplications)
 - **Location**: Bengaluru, India
